@@ -5,9 +5,11 @@
 // Execute `rustlings hint variables1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+// DONE
 
 fn main() {
-    x = 5;
+    let mut x = 5;
+    x= 30;
+    x=x*23;
     println!("x has the value {}", x);
 }

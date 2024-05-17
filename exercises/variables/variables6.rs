@@ -3,9 +3,10 @@
 // Execute `rustlings hint variables6` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+// DONE
 
-const NUMBER = 3;
+// Const variables need to explicitly declare type
+const NUMBER:u8 = 3;
 fn main() {
     println!("Number {}", NUMBER);
 }

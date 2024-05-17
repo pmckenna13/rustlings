@@ -6,14 +6,15 @@
 // Execute `rustlings hint move_semantics5` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+// DONE
 
 #[test]
 fn main() {
     let mut x = 100;
     let y = &mut x;
+    *y += 100; // This is allowed, ensures x is only borrowed once at a time
     let z = &mut x;
-    *y += 100;
+    //*y += 100; Cannot do this here, x is borrowed twice
     *z += 1000;
     assert_eq!(x, 1200);
 }

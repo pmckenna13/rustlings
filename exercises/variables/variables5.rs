@@ -3,11 +3,14 @@
 // Execute `rustlings hint variables5` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+// DONE
 
 fn main() {
     let number = "T-H-R-E-E"; // don't change this line
     println!("Spell a Number : {}", number);
-    number = 3; // don't rename this variable
+    // Shadowing, can redeclare variables
+    let number = 3; // don't rename this variable
+    // Increment by 2 with shadowing
+    let number = number + 2;
     println!("Number plus two is : {}", number + 2);
 }
